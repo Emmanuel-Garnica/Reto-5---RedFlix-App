@@ -14,8 +14,14 @@ public class VentanaPeliculas extends javax.swing.JFrame {
     /**
      * Creates new form VentanaPeliculas
      */
+    
+    peliculaRepositorio repo;
+    
     public VentanaPeliculas() {
         initComponents();
+        String [] args = {};
+        Reto5Application.ServerSpring(args);
+        repo = SpringContext.getBean(peliculaRepositorio.class);
     }
 
     /**
