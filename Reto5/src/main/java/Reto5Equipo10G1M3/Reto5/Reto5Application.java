@@ -5,9 +5,13 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
 public class Reto5Application {
+    
+    public static void main(String[] args) {
+        new VentanaPeliculas().setVisible(true);
+    }
 
-	public static void main(String[] args) {
-		SpringApplication.run(Reto5Application.class, args);
-	}
+    public static void ServerSpring(String[] args) {
+            SpringApplication.run(Reto5Application.class, args);
+    }
 
 }
